@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/kyechan99/Tade/issues"
   },
-  "homepage": "https://github.com/kyechan99/Tade#readme"
+  "homepage": "https://github.com/kyechan99/Tade#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "jquery": "^3.3.1",
+    "morgan": "^1.9.0",
+    "vue": "^2.5.16"
+  }
 }

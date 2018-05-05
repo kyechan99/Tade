@@ -1,13 +1,17 @@
-<img src="tade.png" align="center" width=500/>
+<a align="center">
+    <img src="/public/img/tade.png" width=500/>
+</a>
 <p align="center">
     <strong>웹 애플리케이션 템플릿 프로젝트</strong>
 </p>
 
 ## Dev
-모듈 다운
+모듈 다운 
+
 `npm install`
 
-실행
+실행 
+
 `node app.js`
 
 ## Tech
