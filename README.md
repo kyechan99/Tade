@@ -6,17 +6,19 @@
 </p>
 
 ## Dev (개발 메모)
-모듈 다운 
+#### 모듈 다운 
 
 `npm install`
 
-실행 
+#### 실행 
 
 `node app.js`
 
 #### views
  `views/layouts` : 레이아웃 (반복 코드 미리 구성)
+ 
  `views/components` : 부품 (header, footer 등등)
+ 
  `views/business` : 실제 로직 
 
 ## 프로젝트

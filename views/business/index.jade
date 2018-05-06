@@ -1,5 +1,100 @@
 extends ../layouts/layout
 
 block _content
-  h1= title
-  p Welcome to #{title}
+    .container
+      h1 Bootstrap grid examples
+      p.lead
+        | Basic grid layouts to get you familiar with building within the Bootstrap grid system.
+      h3 Five grid tiers
+      p
+        | There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.
+      .row
+        .col-4 .col-4
+        .col-4 .col-4
+        .col-4 .col-4
+      .row
+        .col-sm-4 .col-sm-4
+        .col-sm-4 .col-sm-4
+        .col-sm-4 .col-sm-4
+      .row
+        .col-md-4 .col-md-4
+        .col-md-4 .col-md-4
+        .col-md-4 .col-md-4
+      .row
+        .col-lg-4 .col-lg-4
+        .col-lg-4 .col-lg-4
+        .col-lg-4 .col-lg-4
+      .row
+        .col-xl-4 .col-xl-4
+        .col-xl-4 .col-xl-4
+        .col-xl-4 .col-xl-4
+      h3 Three equal columns
+      p
+        | Get three equal-width columns 
+        strong starting at desktops and scaling to large desktops
+        | . On mobile devices, tablets and below, the columns will automatically stack.
+      .row
+        .col-md-4 .col-md-4
+        .col-md-4 .col-md-4
+        .col-md-4 .col-md-4
+      h3 Three unequal columns
+      p
+        | Get three columns 
+        strong starting at desktops and scaling to large desktops
+        |  of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.
+      .row
+        .col-md-3 .col-md-3
+        .col-md-6 .col-md-6
+        .col-md-3 .col-md-3
+      h3 Two columns
+      p
+        | Get two columns 
+        strong starting at desktops and scaling to large desktops
+        | .
+      .row
+        .col-md-8 .col-md-8
+        .col-md-4 .col-md-4
+      h3 Full width, single column
+      p.text-warning No grid classes are necessary for full-width elements.
+      hr
+      h3 Two columns with two nested columns
+      p
+        | Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns 
+        strong starting at desktops and scaling to large desktops
+        | , with another two (equal widths) within the larger column.
+      p
+        | At mobile device sizes, tablets and down, these columns and their nested columns will stack.
+      .row
+        .col-md-8
+          | .col-md-8
+          .row
+            .col-md-6 .col-md-6
+            .col-md-6 .col-md-6
+        .col-md-4 .col-md-4
+      hr
+      h3 Mixed: mobile and desktop
+      p
+        | The Bootstrap v4 grid system has five tiers of classes: xs (extra small), sm (small), md (medium), lg (large), and xl (extra large). You can use nearly any combination of these classes to create more dynamic and flexible layouts.
+      p
+        | Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.
+      .row
+        .col-12.col-md-8 .col-12 .col-md-8
+        .col-6.col-md-4 .col-6 .col-md-4
+      .row
+        .col-6.col-md-4 .col-6 .col-md-4
+        .col-6.col-md-4 .col-6 .col-md-4
+        .col-6.col-md-4 .col-6 .col-md-4
+      .row
+        .col-6 .col-6
+        .col-6 .col-6
+      hr
+      h3 Mixed: mobile, tablet, and desktop
+      p
+      .row
+        .col-12.col-sm-6.col-lg-8 .col-12 .col-sm-6 .col-lg-8
+        .col-6.col-lg-4 .col-6 .col-lg-4
+      .row
+        .col-6.col-sm-4 .col-6 .col-sm-4
+        .col-6.col-sm-4 .col-6 .col-sm-4
+        .col-6.col-sm-4 .col-6 .col-sm-4
+    // /container
