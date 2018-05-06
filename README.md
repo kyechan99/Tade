@@ -1,6 +1,6 @@
-<a align="center">
+<p align="center">
     <img src="/public/img/tade.png" width=500/>
-</a>
+</p>
 <p align="center">
     <strong>웹 애플리케이션 템플릿 프로젝트</strong>
 </p>
