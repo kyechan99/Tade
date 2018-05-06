@@ -1,100 +1,37 @@
 extends ../layouts/layout
 
 block _content
-    .container
-      h1 Bootstrap grid examples
-      p.lead
-        | Basic grid layouts to get you familiar with building within the Bootstrap grid system.
-      h3 Five grid tiers
-      p
-        | There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.
-      .row
-        .col-4 .col-4
-        .col-4 .col-4
-        .col-4 .col-4
-      .row
-        .col-sm-4 .col-sm-4
-        .col-sm-4 .col-sm-4
-        .col-sm-4 .col-sm-4
-      .row
-        .col-md-4 .col-md-4
-        .col-md-4 .col-md-4
-        .col-md-4 .col-md-4
-      .row
-        .col-lg-4 .col-lg-4
-        .col-lg-4 .col-lg-4
-        .col-lg-4 .col-lg-4
-      .row
-        .col-xl-4 .col-xl-4
-        .col-xl-4 .col-xl-4
-        .col-xl-4 .col-xl-4
-      h3 Three equal columns
-      p
-        | Get three equal-width columns 
-        strong starting at desktops and scaling to large desktops
-        | . On mobile devices, tablets and below, the columns will automatically stack.
-      .row
-        .col-md-4 .col-md-4
-        .col-md-4 .col-md-4
-        .col-md-4 .col-md-4
-      h3 Three unequal columns
-      p
-        | Get three columns 
-        strong starting at desktops and scaling to large desktops
-        |  of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.
-      .row
-        .col-md-3 .col-md-3
-        .col-md-6 .col-md-6
-        .col-md-3 .col-md-3
-      h3 Two columns
-      p
-        | Get two columns 
-        strong starting at desktops and scaling to large desktops
-        | .
-      .row
-        .col-md-8 .col-md-8
-        .col-md-4 .col-md-4
-      h3 Full width, single column
-      p.text-warning No grid classes are necessary for full-width elements.
-      hr
-      h3 Two columns with two nested columns
-      p
-        | Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns 
-        strong starting at desktops and scaling to large desktops
-        | , with another two (equal widths) within the larger column.
-      p
-        | At mobile device sizes, tablets and down, these columns and their nested columns will stack.
-      .row
-        .col-md-8
-          | .col-md-8
-          .row
-            .col-md-6 .col-md-6
-            .col-md-6 .col-md-6
-        .col-md-4 .col-md-4
-      hr
-      h3 Mixed: mobile and desktop
-      p
-        | The Bootstrap v4 grid system has five tiers of classes: xs (extra small), sm (small), md (medium), lg (large), and xl (extra large). You can use nearly any combination of these classes to create more dynamic and flexible layouts.
-      p
-        | Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.
-      .row
-        .col-12.col-md-8 .col-12 .col-md-8
-        .col-6.col-md-4 .col-6 .col-md-4
-      .row
-        .col-6.col-md-4 .col-6 .col-md-4
-        .col-6.col-md-4 .col-6 .col-md-4
-        .col-6.col-md-4 .col-6 .col-md-4
-      .row
-        .col-6 .col-6
-        .col-6 .col-6
-      hr
-      h3 Mixed: mobile, tablet, and desktop
-      p
-      .row
-        .col-12.col-sm-6.col-lg-8 .col-12 .col-sm-6 .col-lg-8
-        .col-6.col-lg-4 .col-6 .col-lg-4
-      .row
-        .col-6.col-sm-4 .col-6 .col-sm-4
-        .col-6.col-sm-4 .col-6 .col-sm-4
-        .col-6.col-sm-4 .col-6 .col-sm-4
-    // /container
+  .container
+    h1 CONTENT
+    h2 LOREM
+    ol
+    li ab
+      li cd
+      li ef
+    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+    .alert.alert-danger(role='alert')
+      span.glyphicon.glyphicon-thumbs-up(aria-hidden='true')
+      span.sr-only Error:
+      |   Enter a valid email address
+    
+  .container
+    p
+      span.glyphicon.glyphicon-search(aria-hidden='true')  Search
+    p
+      span.glyphicon.glyphicon-asterisk(aria-hidden='true')  Asterisk
+    p
+      span.glyphicon.glyphicon-plus(aria-hidden='true')  Plus
+    p
+      span.glyphicon.glyphicon-euro(aria-hidden='true')  Euro
+    p
+      span.glyphicon.glyphicon-minus(aria-hidden='true')  Minus
+    p
+      span.glyphicon.glyphicon-cloud(aria-hidden='true')  Cloud
+    p
+      span.glyphicon.glyphicon-envelope(aria-hidden='true')  Envelope
+    p
+      span.glyphicon.glyphicon-pencil(aria-hidden='true')  Pencil
+    p
+      span.glyphicon.glyphicon-glass(aria-hidden='true')  Glass
