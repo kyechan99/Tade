@@ -2,7 +2,7 @@
 nav#sideNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
   //- 로고 : 새로고침
   a.navbar-brand(href='#refresh')  
-      img(src='img/logo.png', alt='', width='55rem;', height='55rem;')
+    img(src='img/logo.png', alt='', width='55rem;', height='55rem;')
   //- navbar 토글 
   button.navbar-toggler.custom-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
@@ -21,6 +21,8 @@ nav#sideNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
           i.far.fa-question-circle.fa-2x.custom-fa.icon
           p.custom-fa.text About
       li.nav-item
-        a.nav-link(href='#exit')
-          i.fas.fa-sign-out-alt.fa-2x.custom-fa.icon
-          p.custom-fa.text Exit
+        a.nav-link.navbar-logout-item(href='#logout')
+          p.custom-fa.text Logout
+  a.navbar-logout-brand(href='#logout')  
+    i.fas.fa-sign-out-alt.fa-2x.custom-fa.icon
+    p.custom-fa.text Logout

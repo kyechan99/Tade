@@ -21,6 +21,12 @@ body {
   #sideNav .navbar-collapse .navbar-nav .nav-item i {
     display: none;
   }
+  #sideNav .navbar-logout-brand {
+    display: none;
+  }
+  #sideNav .navbar-logout-item {
+    display: block;
+  }
   
   @media (min-width: 992px) {
     #sideNav {
@@ -32,11 +38,13 @@ body {
       flex-direction: column;
       width: 6.5rem;
       height: 100vh;
+      box-shadow: 2px 0px 5px 1px gray;
     }
     #sideNav .navbar-brand {
       display: flex;
       margin: 0;
-      padding: 3rem;
+      padding-top: 1rem;
+      margin-bottom: 2.5rem;
     }
     #sideNav .navbar-collapse {
       display: flex;
@@ -51,11 +59,18 @@ body {
     }
     #sideNav .navbar-collapse .navbar-nav .nav-item {
       display: block;
+      margin-bottom: 1rem;
     }
     
     /* 992px 이상에서는 이미지 보임 */
     #sideNav .navbar-collapse .navbar-nav .nav-item i {
       display: block;
+    }
+    #sideNav .navbar-logout-brand {
+      display: block;
+    }
+    #sideNav .navbar-logout-item {
+      display: none;
     }
   }
   
