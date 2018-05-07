@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 992px) {
+    body {
+      padding-left: 6.5rem;
+    }
+  }
+  .carousel, .carousel-item, .active {
+    height: 100%;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel .carousel-inner .bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel .carousel-inner .bg1 {
+    background-image: url('https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_960_720.jpg');
+    background-position: center top;
+  }
+  .carousel .carousel-inner .bg2 {
+    background-image: url('https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_960_720.jpg');
+    background-position: center center;
+  }
+  .carousel .carousel-inner .bg3 {
+    background-image: url('https://cdn.pixabay.com/photo/2015/01/14/18/41/home-office-599475_960_720.jpg');
+    background-position: center bottom;
+  }
