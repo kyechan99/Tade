@@ -4,10 +4,6 @@ html(lang='en')
     title= title
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-
-   
-    //- <link rel="icon" href="../../../../favicon.ico">
-    title Grid Template for Bootstrap
     
     //- Bootstrap core CSS
     link(href='css/bootstrap.min.css', rel='stylesheet')
@@ -16,6 +12,10 @@ html(lang='en')
     //- link(href='css/grid.css', rel='stylesheet')
     link(href='css/navbar.css', rel='stylesheet')
     
+    //- awesome font
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.12/css/all.css', integrity='sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9', crossorigin='anonymous')
+
+
   body
     //-   header
     include ../components/header
@@ -26,6 +26,8 @@ html(lang='en')
     //- include ../components/footer
     
     //- script
+    script.
+      $('.carousel').carousel()
     script(src='js/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
     script(src='js/bootstrap.min.js')

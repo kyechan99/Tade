@@ -16,6 +16,11 @@ body {
     text-transform: uppercase;
     color: #383838;
   }
+
+  /* 992px 이하에서는 이미지 안보임 */
+  #sideNav .navbar-collapse .navbar-nav .nav-item i {
+    display: none;
+  }
   
   @media (min-width: 992px) {
     #sideNav {
@@ -25,7 +30,7 @@ body {
       left: 0;
       display: flex;
       flex-direction: column;
-      width: 7rem;
+      width: 6.5rem;
       height: 100vh;
     }
     #sideNav .navbar-brand {
@@ -47,7 +52,9 @@ body {
     #sideNav .navbar-collapse .navbar-nav .nav-item {
       display: block;
     }
-    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    
+    /* 992px 이상에서는 이미지 보임 */
+    #sideNav .navbar-collapse .navbar-nav .nav-item i {
       display: block;
     }
   }
@@ -65,4 +72,45 @@ body {
   }
   .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.4)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .custom-fa.icon {
+    color: #a3a2a2;
+  }
+  .custom-fa.text {
+    color: #a8a7a7;
+  }
+
+/* Carousel 100% Fullscreen */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 992px) {
+    body {
+      padding-left: 6.5rem;
+    }
+  }
+  .carousel, .carousel-item, .active {
+    height: 100%;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel .carousel-inner .bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel .carousel-inner .bg1 {
+    background-image: url('https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_960_720.jpg');
+    background-position: center top;
+  }
+  .carousel .carousel-inner .bg2 {
+    background-image: url('https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_960_720.jpg');
+    background-position: center center;
+  }
+  .carousel .carousel-inner .bg3 {
+    background-image: url('https://cdn.pixabay.com/photo/2015/01/14/18/41/home-office-599475_960_720.jpg');
+    background-position: center bottom;
   }
