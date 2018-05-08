@@ -10,17 +10,8 @@ body {
     #card-container {
       padding-left: 6.5rem;
     }
-    #custom-card {
-      /* box-shadow: 0px 0px 8px 0px gray; */
-    }
-    #custom-form-card {
-      box-shadow: 0px 0px 8px 0px gray;
-    }
     .card {
       padding-left: 10%;
       padding-right: 10%;      
     }
-  }
-  h3 {
-      text-align: center;
   }

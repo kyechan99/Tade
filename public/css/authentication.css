@@ -1,35 +1,48 @@
 
-  @media (min-width: 992px) {
+  @media (min-width: 992px ) {
     .card {
-      margin-top: 5rem;
+      margin-top: 2rem;
       margin-left: 5rem;
       margin-right: 5rem;
-      padding: 7rem;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 35rem;
+      position: relative;
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      align-items: center; 
+      text-align: center;
     }
-    #custom-form-card {
-      margin-top: -10rem;
-      margin-bottom: -10rem;
-      padding-top: 10rem;
-      padding-bottom: 10rem;
-      background-color: white;
+    .card .card-body .row {
+      flex-direction: row;
+      align-items: center; 
+      text-align: center;
     }
-  }
-  .card {
-    /* width: 100%; */
-    height: 100%;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../img/thumb_2.jpg');
-    box-shadow: 0px 0px 15px 1px gray;
-    background-size: 105%;
+    .card .card-body .row .col-lg-5#card-form {
+      position: absolute;
+      box-shadow: 0px 0px 15px 1px gray;
+      background-color: rgba(255,255,255,0.9);
+      text-align: center;
+      height: 40rem;
+      /* 좌측 : 0%  | 우측 : 55% */
+      margin-left: 0%;
+    }
+    .card .card-body:not(#case) {
+      color: red;
+    }
   }
   
-  #custom-card {
+  .card {
+    border-radius: 0.4rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/thumb_2.jpg');
+    box-shadow: 0px 0px 15px 1px gray;
+    background-size: cover;
+    border: 0px;
+  }
+  
+  .card .card-body:not(#form) {
     color: white;
   }
 
@@ -39,4 +52,10 @@
   }
   h1 {
     font-weight: bold;
+  }
+  input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
   }

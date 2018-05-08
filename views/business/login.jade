@@ -7,19 +7,18 @@ block _content
   #card-container
     h1 Login
     .card
-      .card-body#custom-card
-        h2 Don't Have an account?
-        p If you want use this services, Please register account
-        button.btn.btn-outline-light(type='button') Register
-      .card-body#custom-form-card
-        h3 Sign in
-        .form-group
-          label Email
-          input.form-control(type='text', id='email')
-        .form-group
-          label Password
-          input.form-control(type='password', id='password')
-        button.btn.btn-primary(type='submit') Sign in
-  
+      .card-body
+        .row
+          .col-lg-5
+            h2 Don't have an account?
+            p If you want use this services, Please register account.
+            button.btn.btn-outline-light(type='button') Register
+          .col-lg-2
+          .col-lg-5
+            h2 Already have an account?
+            p If you have an account, you don't need to Register.
+            button.btn.btn-outline-light(type='button') Sign i
+          .col-lg-5#card-form
+
 
 //-   https://mdbootstrap.com/components/forms/
