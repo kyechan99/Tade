@@ -1,0 +1,26 @@
+body {
+    padding-top: 5.7rem;
+    background-color: #ececec;
+  }
+  #card-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media (min-width: 992px) {
+    #card-container {
+      padding-left: 6.5rem;
+    }
+    #custom-card {
+      /* box-shadow: 0px 0px 8px 0px gray; */
+    }
+    #custom-form-card {
+      box-shadow: 0px 0px 8px 0px gray;
+    }
+    .card {
+      padding-left: 10%;
+      padding-right: 10%;      
+    }
+  }
+  h3 {
+      text-align: center;
+  }

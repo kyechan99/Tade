@@ -1,5 +1,8 @@
 extends ../layouts/layout
 
+block _css
+  link(href='css/carousel.css', rel='stylesheet')
+
 block _content
   #myCarousel.carousel.slide(data-ride='carousel')
     ol.carousel-indicators
@@ -15,10 +18,10 @@ block _content
       .carousel-item.bg.bg2
         .container
           .carousel-caption
-            h3 Label_0
+            h3 Label_1
             p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       .carousel-item.bg.bg3
         .container
           .carousel-caption
-            h3 Label_0
+            h3 Label_2
             p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
