@@ -5,20 +5,53 @@ block _css
 
 block _content
   #card-container
-    h1 Login
-    .card
+    h1
+      i.fas.fa-sign-in-alt.f.fa-2x(style='color:#CCCCCC; position:absolute; z-index:-1; ')
+      div(style='margin-left:45px; padding-top:25px;') Login
+    .card#authentication
       .card-body
         .row
-          .col-lg-5
-            h2 Don't have an account?
-            p If you want use this services, Please register account.
-            button.btn.btn-outline-light(type='button') Register
-          .col-lg-2
-          .col-lg-5
-            h2 Already have an account?
-            p If you have an account, you don't need to Register.
-            button.btn.btn-outline-light(type='button') Sign i
-          .col-lg-5#card-form
+          .col-lg-6#left-card
+            .card-case(v-show='state === true')
+              h2 Don't have an account?
+              p If you want use this services, Please register account.
+              button.btn.btn-outline-light(type='button' v-on:click="wantRegister") Register
+            .card-form(v-show='state === false')
+              .wrap
+                h1(style='text-align:center;') Nice to meet you! 
+                br
+                br
+                form.login
+                  input(type='email', placeholder='E-mail')
+                  input(type='text', placeholder='Username')
+                  input(type='password', placeholder='Password')
+                  input.btn.btn-dark.btn-sm(type='submit', value='Register')
+          .col-lg-6#right-card
+            .card-case(v-show='state === false')
+              h2 Already have an account?
+              p If you have an account, you don't need to Register.
+              button.btn.btn-outline-light(type='button' v-on:click="wantLogin") Sign in
+            .card-form(v-show='state === true')
+              .wrap
+                h1(style='text-align:center;') Welcome !
+                br
+                br
+                form.login
+                  input(type='text', placeholder='Username')
+                  input(type='password', placeholder='Password')
+                  input.btn.btn-dark.btn-sm(type='submit', value='Login')
+                  .remember-forgot
+                    .row
+                      .col-md-6
+                        .checkbox
+                          label
+                            input(type='checkbox')
+                            |                 Remember Me
+                      .col-md-6.forgot-pass-content
+                        a.forgot-pass(href='javascript:void(0)') Forgot Password
+          .col-lg-6#card-form
 
+block _js
+  script(src='js/temp.js')
 
 //-   https://mdbootstrap.com/components/forms/
