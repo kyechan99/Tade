@@ -7,5 +7,8 @@ router.get('/', function(req, res) {
 router.get('/login', function(req, res) {
     res.render('business/login');
 });
+router.get('/about', function(req, res) {
+    res.render('business/about');
+});
 
 module.exports = router;
