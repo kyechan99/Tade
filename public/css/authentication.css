@@ -1,130 +1,186 @@
 
-  @keyframes card-move1 {
-    0% {left: 2%;}
-    80% {left: 50%;}
-    90% {left: 46%;}
-    100% {left: 48%;}
-  } @keyframes card-move2 {
-    0% {left: 48%;}
-    80% {left: 0%;}
-    90% {left: 4%;}
-    100% {left: 2%;}
+@keyframes card-move1 {
+  0% {
+      left: 2%;
   }
-  @media (min-width: 992px ) {
-    .card {
+  80% {
+      left: 50%;
+  }
+  90% {
+      left: 46%;
+  }
+  100% {
+      left: 48%;
+  }
+}
+@keyframes card-move2 {
+  0% {
+      left: 48%;
+  }
+  80% {
+      left: 0;
+  }
+  90% {
+      left: 4%;
+  }
+  100% {
+      left: 2%;
+  }
+}
+
+form.login input[type="text"],
+form.login input[type="password"],
+form.login input[type="email"] {
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+  margin: 0;
+  padding: 10px 5px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  outline: 0;
+  margin-bottom: 5px;
+  color: white;
+}
+form.login input[type="submit"] {
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+  font-size: 25px;
+  text-transform: uppercase;
+  /* font-weight: 400; */
+  margin-top: 20px;
+  outline: 0;
+  cursor: pointer;
+}
+
+form.login input[type="submit"]:hover {
+  transition: background-color 0.5s ease;
+}
+
+form.login .remember-forgot {
+  float: left;
+  width: 100%;
+  margin: 10px 0 0;
+}
+form.login .forgot-pass-content {
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card {
+  border-radius: 0.4rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/thumb_2.jpg");
+  box-shadow: 0 0 15px 1px gray;
+  background-size: cover;
+  border: 0;
+}
+
+.card .card-body:not(#form) {
+  color: white;
+}
+
+form.login a,
+form.login label {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-weight: bold;
+}
+.card h1 {
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .card {
+    text-align: center;
+  }
+  .card #right-card {
+    margin-top: 5rem;
+  }
+  input::-webkit-input-placeholder { /* 크롬 4–56 */
+    color: white;
+  }
+  input:-moz-placeholder { /* 파이어폭스 4–18 */
+    color: white;
+    opacity:  1;
+  }
+  input::-moz-placeholder { /* 파이어폭스 19–50 */
+    color: white;
+    opacity:  1;
+  }
+  input:-ms-input-placeholder { /* 인터넷 익스플로러 10+ */
+    color:  white;
+  }
+  input::placeholder { /* 파이어폭스 51+, 크롬 57+ */
+    color: white;
+    opacity:  1;
+  }
+}
+
+@media (min-width: 992px) {
+  .card h1 {
+    color: black
+  }
+  .card {
       margin-top: 2rem;
       margin-left: 5rem;
       margin-right: 5rem;
       /* padding-left: 15px;
-      padding-right: 15px; */
+          padding-right: 15px; */
       height: 35rem;
       position: relative;
       display: flex;
       flex-direction: row;
-      align-items: center; 
+      align-items: center;
       /* text-align: center; */
-    }
-    .card .card-body .row {
+  }
+  .card .card-body .row {
       flex-direction: row;
-      align-items: center; 
+      align-items: center;
       text-align: center;
-    }
-    .card .card-body .row .col-lg-6#left-card {
+  }
+  .card .card-body .row .col-lg-6#left-card {
       left: -5%;
       z-index: 101;
-    }
-    .card .card-body .row .col-lg-6#right-card {
+  }
+  .card .card-body .row .col-lg-6#right-card {
       left: 5%;
       z-index: 10;
-    }
-    .card .card-body .row .col-lg-6#card-form {
+  }
+  .card .card-body .row .col-lg-6#card-form {
       position: absolute;
-      box-shadow: 0px 0px 15px 1px gray;
+      box-shadow: 0 0 15px 1px gray;
       background-color: rgba(255,255,255,0.9);
       text-align: center;
       height: 40rem;
       width: 40rem;
-      z-index: 1;
+
       /* 좌측 : 2%  | 우측 : 48% */
       left: 48%;
-      /* animation-name: card-move; */
+      /* animation-name: card-move1  or card-move2; */
       animation-duration: 0.8s;
       animation-fill-mode: forwards;
-    }
-    .card .card-body:not(#case) {
-      color: red;
-    }
-  }
-  
-  .card {
-    border-radius: 0.4rem;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url('../img/thumb_2.jpg');
-    box-shadow: 0px 0px 15px 1px gray;
-    background-size: cover;
-    border: 0px;
-  }
-  
-  .card .card-body:not(#form) {
-    color: white;
   }
 
-  h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+  form.login input[type="text"],
+  form.login input[type="password"],
+  form.login input[type="email"] {
+      border-bottom: 1px solid black;
+      color: black;
   }
-  h1 {
-    font-weight: bold;
-    color: black;
+  form.login a,
+  form.login label {
+      color: black;
   }
-
-form.login input[type="text"], form.login input[type="password"], form.login input[type="email"]
-{
-    font-family: 'Roboto', sans-serif;
-    width: 90%;
-    margin: 0;
-    padding: 10px 5px;
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid black;
-    outline: 0;
-    margin-bottom: 5px;
-    color: black;
-}
-
-form.login input[type="submit"]
-{
-  font-family: 'Roboto', sans-serif;
-    width: 90%;
-    font-size: 25px;
-    text-transform: uppercase;
-    /* font-weight: 400; */
-    margin-top: 20px;
-    outline: 0;
-    cursor: pointer;
-}
-
-form.login input[type="submit"]:hover
-{
-    transition: background-color 0.5s ease;
-}
-
-form.login .remember-forgot
-{
-    float: left;
-    width: 100%;
-    margin: 10px 0 0 0;
-}
-form.login .forgot-pass-content
-{
-    min-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-form.login label, form.login a
-{
-    font-size: 12px;
-    font-weight: 400;
-    color: black;
 }

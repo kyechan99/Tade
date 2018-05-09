@@ -1,32 +1,48 @@
-html, body {
+body,
+html {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
-  @media (min-width: 992px) {
+}
+@media (min-width: 992px) {
+    #index-center,
     body {
-      padding-left: 6.5rem;
+        padding-left: 6.5rem;
     }
-  }
-  .carousel, .carousel-item, .active {
+}
+.active,
+.carousel,
+.carousel-item {
     height: 100%;
-  }
-  .carousel-inner {
+}
+.carousel-inner {
     height: 100%;
-  }
-  .carousel .carousel-inner .bg {
+}
+.carousel .carousel-inner .bg {
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .carousel .carousel-inner .bg1 {
-    background-image: url('../img/thumb_0.jpg');
+}
+.carousel .carousel-inner .bg1 {
+    background-image: url("../img/thumb_0.jpg");
     background-position: center top;
-  }
-  .carousel .carousel-inner .bg2 {
-    background-image: url('../img/thumb_1.jpg');
+}
+.carousel .carousel-inner .bg2 {
+    background-image: url("../img/thumb_1.jpg");
     background-position: center center;
-  }
-  .carousel .carousel-inner .bg3 {
-    background-image: url('../img/thumb_2.jpg');
+}
+.carousel .carousel-inner .bg3 {
+    background-image: url("../img/thumb_2.jpg");
     background-position: center bottom;
-  }
+}
+
+#index-center {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 35%;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px white;
+    transform: translate(-50%, -50%);
+}

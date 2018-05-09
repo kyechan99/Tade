@@ -1,17 +1,17 @@
 body {
-    padding-top: 5.7rem;
-    background-color: #ececec;
-  }
+  padding-top: 5.7rem;
+  background-color: #ececec;
+}
+#card-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 992px) {
   #card-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  @media (min-width: 992px) {
-    #card-container {
       padding-left: 6.5rem;
-    }
-    .card {
-      padding-left: 10%;
-      padding-right: 10%;      
-    }
   }
+  .card {
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+}

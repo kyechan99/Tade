@@ -1,7 +1,7 @@
 
 nav#sideNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
   //- 로고 : 새로고침
-  a.navbar-brand(href='#refresh')  
+  a.navbar-brand(href='/')  
     img(src='img/logo.png', alt='', width='55rem;', height='55rem;')
   //- navbar 토글 
   button.navbar-toggler.custom-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
@@ -9,7 +9,7 @@ nav#sideNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
   #navbarSupportedContent.collapse.navbar-collapse
     ul.navbar-nav
       li.nav-item
-        a.nav-link(href='#home')
+        a.nav-link(href='/main')
           i.fas.fa-home.fa-2x.custom-fa.icon
           p.custom-fa.text Home
       li.nav-item
@@ -17,7 +17,7 @@ nav#sideNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
           i.far.fa-user.fa-2x.custom-fa.icon
           p.custom-fa.text User
       li.nav-item
-        a.nav-link(href='#about')
+        a.nav-link(href='/about')
           i.far.fa-question-circle.fa-2x.custom-fa.icon
           p.custom-fa.text About
       li.nav-item
