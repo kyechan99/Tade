@@ -7,7 +7,6 @@ var Novel = new Vue({
     }
 })
 
-
 $(document).scroll(function (){
     if (Novel.status === false){
         if ($(document).scrollTop() >= 5) {

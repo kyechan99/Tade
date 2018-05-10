@@ -13,5 +13,8 @@ router.get('/about', function(req, res) {
 router.get('/novel', function(req, res) {
     res.render('business/novel');
 });
+router.get('/post', function(req, res) {
+    res.render('business/post');
+});
 
 module.exports = router;
