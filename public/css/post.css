@@ -23,8 +23,8 @@ body {
         margin:0;
         height: 100vh;
         overflow: auto; 
-        margin-right: -40px;
-        padding-right: 40px; 
+        margin-right: -60px;
+        padding-right: 60px; 
         padding-bottom: 5rem;
     }
   }
