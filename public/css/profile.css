@@ -1,0 +1,27 @@
+
+
+.card {
+    /* background-color: blue; */
+    padding-top : 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 0 15px 1px gray;
+}
+.card .col-lg-4 {
+    background-color: #ECF0F1;
+    /* background-color: red; */
+}
+.card .col-lg-4 img {
+    /* position: absolute; */
+    bottom:0;
+    left: 0%;
+    margin-bottom: -50px;
+    width: 100%;
+}
+.card .col-lg-8 {
+    background-color: #ECF0F1;
+    /* padding : 2rem; */
+}
+.card .col-lg-12 {
+    background-color: white;
+}
