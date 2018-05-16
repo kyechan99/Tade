@@ -8,13 +8,13 @@ var Authentication = new Vue({
     },
     methods: {
         wantRegister : function() {
-            document.getElementById('card-form').style.animationName="card-move2";
-            // document.getElementById('card-form').style.animationFillMode= forwards;
+            document.getElementById('card-bg').style.animationName="card-move2";
+            // document.getElementById('card-bg').style.animationFillMode= forwards;
             this.state = false;
         },
         wantLogin : function() {
-            document.getElementById('card-form').style.animationName="card-move1";
-            // document.getElementById('card-form').style.animationFillMode= forwards;
+            document.getElementById('card-bg').style.animationName="card-move1";
+            // document.getElementById('card-bg').style.animationFillMode= forwards;
             this.state = true;
         }
     }
