@@ -1,0 +1,40 @@
+
+@keyframes page-FadeOut {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes page-FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.card-body {
+    align-items: center;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea  {
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+#scene .card #page0,
+#scene .card #page1,
+#scene .card #page2 {  
+  /* position: absolute; */
+      /* animation-name: page-FadeOut or page-FadeIn */
+      animation-duration: 0.8s;
+      animation-fill-mode: forwards;
+}
