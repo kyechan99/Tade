@@ -1,4 +1,9 @@
-body {
+/* 
+    This is <Components css file>.
+    You must include this css file before <Business css> file
+ */
+ 
+ body {
   padding-top: 5.7rem;
   background-color: #ececec;
 }

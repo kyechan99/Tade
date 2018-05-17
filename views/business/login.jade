@@ -2,6 +2,7 @@ extends ../layouts/layout
 
 block _css
   link(href='css/authentication.css', rel='stylesheet')
+  link(href='css/Components/form.css', rel='stylesheet')
 
 block _content
   .container#card-container
@@ -21,7 +22,7 @@ block _content
                 h1(style='text-align:center;') Nice to meet you! 
                 br
                 br
-                form.login
+                form.register
                   input(type='email', placeholder='E-mail')
                   input(type='text', placeholder='Username')
                   input(type='password', placeholder='Password')

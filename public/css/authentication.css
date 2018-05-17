@@ -28,45 +28,6 @@
   }
 }
 
-form.login input[type="text"],
-form.login input[type="password"],
-form.login input[type="email"] {
-  font-family: 'Roboto', sans-serif;
-  width: 90%;
-  margin: 0;
-  padding: 10px 5px;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid white;
-  outline: 0;
-  margin-bottom: 5px;
-  color: white;
-}
-form.login input[type="submit"] {
-  font-family: 'Roboto', sans-serif;
-  width: 90%;
-  font-size: 25px;
-  text-transform: uppercase;
-  /* font-weight: 400; */
-  margin-top: 20px;
-  outline: 0;
-  cursor: pointer;
-}
-
-form.login input[type="submit"]:hover {
-  transition: background-color 0.5s ease;
-}
-
-form.login .remember-forgot {
-  float: left;
-  width: 100%;
-  margin: 10px 0 0;
-}
-form.login .forgot-pass-content {
-  min-height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .card {
   border-radius: 0.4rem;
   background-position: center center;
@@ -171,16 +132,5 @@ h1 {
       /* animation-name: card-move1  or card-move2; */
       animation-duration: 0.8s;
       animation-fill-mode: forwards;
-  }
-
-  form.login input[type="text"],
-  form.login input[type="password"],
-  form.login input[type="email"] {
-      border-bottom: 1px solid black;
-      color: black;
-  }
-  form.login a,
-  form.login label {
-      color: black;
   }
 }

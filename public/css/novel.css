@@ -10,16 +10,16 @@ body {
         height: 100%;
         /* overflow-y:hidden; */
     }
-    .row .col-lg-6#left {
+    .row #left {
         box-shadow: 0 0 3px 1px gray;        
     }
-    .row .col-lg-6#right {
+    .row #right {
         padding-left: 30px;
         padding-right: 30px;
         height: 100vh;
         overflow: hidden;
     }
-    .row .col-lg-6#right .content {
+    .row #right .content {
         margin:0;
         height: 100vh;
         overflow: auto; 
@@ -41,24 +41,41 @@ body {
     min-height: 100vh;
 }
 
-.row .col-lg-6#left {
+.row #left {
     background-color: white;
     z-index: 2;
     display: flex;
     align-items: center;
     text-align: center;
     max-height: 100vh;
+    overflow: hidden;
+
+    background-image: url("../img/novel.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.row .col-lg-6#right {
+.row #right {
     padding-top: 30px;
     background-color: #ececec;
     z-index: 1;
     margin:0;
 }
 
-.row .col-lg-6#left .content {
+.row #left .content {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 4;;
+    color:white;
+    font-family: 'Roboto', sans-serif;
 }
 
+.row #left .content h1 {
+    font-size: 50px;
+    /* font-weight:400;  */
+}
+.row #left .content p {
+    font-size: 25px;
+    /* font-weight:400;  */
+}

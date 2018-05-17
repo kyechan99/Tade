@@ -1,0 +1,59 @@
+/* 
+    This is <Components css file>.
+    You must include this css file before <Business css> file
+ */
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea  {
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+  margin: 0;
+  padding: 10px 5px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  outline: 0;
+  margin-bottom: 5px;
+  color: white;
+}
+form input[type="submit"] {
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+  font-size: 25px;
+  text-transform: uppercase;
+  /* font-weight: 400; */
+  margin-top: 20px;
+  outline: 0;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  transition: background-color 0.5s ease;
+}
+
+form .remember-forgot {
+  float: left;
+  width: 100%;
+  margin: 10px 0 0;
+}
+form .forgot-pass-content {
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width:992px) {
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"] , 
+    form textarea {
+        border-bottom: 1px solid black;
+        color: black;
+    }
+    form.login a,
+    form.login label {
+        color: black;
+    }
+}
