@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
     next(err);
 });
 
-app.listen(8080, function(){
+app.listen(process.env.PORT || 8080, function(){
     console.log("Connected 8080 port");
 });
 
