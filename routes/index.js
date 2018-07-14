@@ -4,6 +4,9 @@ var router = express.Router();
 router.get('/', function(req, res) {
     res.render('business/index', { title: 'Tade index page'});
 });
+router.get('/main', function(req, res) {
+    res.render('business/main');
+})
 router.get('/login', function(req, res) {
     res.render('business/login');
 });

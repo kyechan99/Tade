@@ -1,0 +1,81 @@
+extends ../layouts/layout
+
+block _css
+  link(href='css/main.css', rel='stylesheet')
+
+block _content
+  .container
+    #recommend-novel.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#recommend-novel', data-slide-to='0')
+        li(data-target='#recommend-novel', data-slide-to='1')
+        li(data-target='#recommend-novel', data-slide-to='2')
+      .carousel-inner
+        .carousel-item.active
+          a(href="#")
+            img(src='img/recommend-novel.jpg', alt='slide - 0')
+            .carousel-caption.d-none.d-md-block
+              //- h5 하늘에서 내려온 토끼
+              //- p 올해를 강타할 #힐링 #일상
+        .carousel-item
+          a(href="#")
+            img(src='img/thumb_1.jpg', alt='slide - 1')
+        .carousel-item
+          a(href="#")
+            img(src='img/thumb_2.jpg', alt='slide - 2')
+      a.carousel-control-prev(href='#recommend-novel', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#recommend-novel', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+        
+    br
+    hr
+    br
+
+    //- h3 &nbsp;#이 달의 베스트 릴레이
+    #best-novel.card(style='padding-left:0; padding-right:0;')
+      .card-body
+        //- .row.float-right
+        //-   .btn-group(role='group' style='margin-top:-40px;')
+        //-     a.btn.btn-md(href='#')
+        //-       i.fas.fa-angle-left.fa-2x(aria-hidden='true')
+        //-     a.btn.btn-md(href='#')
+        //-       i.fas.fa-angle-right.fa-2x(aria-hidden='true')
+        .row
+          .col-md-8
+            h3 &nbsp;#이 달의 베스트 릴레이
+          .col-md-4
+            .btn-group.float-right(role='group' style='margin-top:-10px; background:white;')
+              a.btn.btn-md(href='#')
+                i.fas.fa-angle-left.fa-2x(aria-hidden='true')
+              a.btn.btn-md(href='#')
+                i.fas.fa-angle-right.fa-2x(aria-hidden='true')
+        .row
+          .col-md-3
+            .card
+              img(src='img/n_0.jpg', alt='slide - 2')
+          .col-md-3
+            .card
+              img(src='img/n_1.jpg', alt='slide - 2')  
+          .col-md-3
+            .card
+              img(src='img/n_2.jpg', alt='slide - 2')  
+          .col-md-3
+            .card
+              img(src='img/n_3.jpg', alt='slide - 2')  
+    
+    br
+    br
+    h4 #장르별
+    .card.bg-white.text-white#card-recommend
+      img.card-img(src='img/thumb_0.jpg'  , alt='Card image')
+      .card-img-overlay
+        h5.card-title TITLE
+        p.card-text YEAAHHHHHHH
+        p.card-text niceeeeeee
+        
+block _js
+  script.
+    $('.carousel').carousel()
