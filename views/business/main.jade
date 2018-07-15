@@ -31,40 +31,46 @@ block _content
         span.sr-only Next
         
     br
-    hr
     br
 
-    //- h3 &nbsp;#이 달의 베스트 릴레이
+    h3 &nbsp;#이 달의 베스트 릴레이
     #best-novel.card(style='padding-left:0; padding-right:0;')
       .card-body
-        //- .row.float-right
-        //-   .btn-group(role='group' style='margin-top:-40px;')
-        //-     a.btn.btn-md(href='#')
-        //-       i.fas.fa-angle-left.fa-2x(aria-hidden='true')
-        //-     a.btn.btn-md(href='#')
-        //-       i.fas.fa-angle-right.fa-2x(aria-hidden='true')
-        .row
-          .col-md-8
-            h3 &nbsp;#이 달의 베스트 릴레이
-          .col-md-4
-            .btn-group.float-right(role='group' style='margin-top:-10px; background:white;')
-              a.btn.btn-md(href='#')
-                i.fas.fa-angle-left.fa-2x(aria-hidden='true')
-              a.btn.btn-md(href='#')
-                i.fas.fa-angle-right.fa-2x(aria-hidden='true')
+        //- .row
+        //-   .col-md-8
+        //-     h3 &nbsp;#이 달의 베스트 릴레이
+        //-   .col-md-4
+        //-     .btn-group.float-right(role='group' style='margin-top:-10px; background:white;')
+        //-       a.btn.btn-md(href='#')
+        //-         i.fas.fa-angle-left.fa-2x(aria-hidden='true')
+        //-       a.btn.btn-md(href='#')
+        //-         i.fas.fa-angle-right.fa-2x(aria-hidden='true')
         .row
           .col-md-3
             .card
-              img(src='img/n_0.jpg', alt='slide - 2')
+              a(href='#')
+                img(src='img/n_0.jpg', alt='slide - 2')
+                div(style='margin-left:1rem; margin-right:1rem; margin-top:1rem;')
+                  h4 도련님의 은밀한 집착
+                  p 작가이름
           .col-md-3
             .card
               img(src='img/n_1.jpg', alt='slide - 2')  
           .col-md-3
             .card
-              img(src='img/n_2.jpg', alt='slide - 2')  
+              a(href='#')
+                img(src='img/n_2.jpg', alt='slide - 2')  
+                div(style='margin-left:1rem; margin-right:1rem; margin-top:1rem;')
+                  h4 도련님의 은밀한 집착
+                  p 작가이름
           .col-md-3
             .card
               img(src='img/n_3.jpg', alt='slide - 2')  
+        .btn-group.float-right(role='group' style='margin-bottom:-10px; background:white;')
+          a.btn.btn-md(href='#')
+            i.fas.fa-angle-left.fa-2x(aria-hidden='true')
+          a.btn.btn-md(href='#')
+            i.fas.fa-angle-right.fa-2x(aria-hidden='true')
     
     br
     br

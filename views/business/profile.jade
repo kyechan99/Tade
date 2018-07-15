@@ -5,22 +5,46 @@ block _css
 
 block _content
   .container
-    h1 asdf
-    .card
-      .row
-        .col-lg-4
-          img(src="https://www.nabeel.co.in/files/bootsnipp/team/1.jpg", alt="")
-        .col-lg-8
-          h1 dd
-          h1 dd
-          h1 dd
-          h1 dd
-          h1 dd
-          h1 dd
-          h1 dd
-          h1 dd
-        .col-lg-12
-          h1 ccc
+    h1 User
+    .row
+      .col-lg-4#profile
+        .card
+          .card-body.profile-card(style="background:white")
+            img.profile-img.rounded-circle(src="img/profile.jpg", alt="")
+            br
+            br
+            h3 Author
+            br
+            hr
+            br
+            a.btn.btn-info(href="") FOLLOW
+            br
+          .row.info-card
+            .col-md-4
+              h4
+                p.text-center 183
+              p.text-center Novel
+            .col-md-4
+              h4
+                p.text-center 52
+              p.text-center Following
+            .col-md-4
+              h4
+                p.text-center 52.7K
+              p.text-center Followers
+      .col-lg-8
+        .card
+          .card-body
+            ul.nav.nav-tabs
+              li.nav-item
+                a.nav-link.active(href='#') Main
+              li.nav-item
+                a.nav-link.disabled(href='#') Novel
+              li.nav-item
+                a.nav-link.disabled(href='#') Following
+              li.nav-item
+                a.nav-link.disabled(href='#') Follower
+
 
     
 
