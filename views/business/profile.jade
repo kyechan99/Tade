@@ -5,47 +5,96 @@ block _css
 
 block _content
   .container
-    h1 User
-    .row
-      .col-lg-4#profile
-        .card
+    h1
+      i.fas.fa-user.fa-2x(style='color:#CCCCCC; position:absolute; z-index:-1; ')
+      div(style='margin-left:45px; padding-top:25px; color:#34495E;') User
+    .row()
+      .col-lg-4#profile-left
+        .card.card-shadow
           .card-body.profile-card(style="background:white")
             img.profile-img.rounded-circle(src="img/profile.jpg", alt="")
             br
             br
             h3 Author
             br
+            p Hi! Nice to meet you!
             hr
             br
-            a.btn.btn-info(href="") FOLLOW
+            a.btn.btn-info.btn-follow(href="") FOLLOW
             br
           .row.info-card
-            .col-md-4
-              h4
-                p.text-center 183
-              p.text-center Novel
-            .col-md-4
-              h4
-                p.text-center 52
-              p.text-center Following
-            .col-md-4
-              h4
-                p.text-center 52.7K
-              p.text-center Followers
-      .col-lg-8
-        .card
+            .col-md-4.text-center
+              h4 183
+              p Novel
+            .col-md-4.text-center
+              h4 52
+              p Following
+            .col-md-4.text-center
+              h4 52.7K
+              p Followers
+      .col-lg-8#profile-right
+        .card.card-shadow
           .card-body
-            ul.nav.nav-tabs
-              li.nav-item
-                a.nav-link.active(href='#') Main
-              li.nav-item
-                a.nav-link.disabled(href='#') Novel
-              li.nav-item
-                a.nav-link.disabled(href='#') Following
-              li.nav-item
-                a.nav-link.disabled(href='#') Follower
-
-
-    
+            nav
+                #nav-tab.nav.nav-tabs(role='tablist')
+                  a#nav-main-tab.nav-item.nav-link.active(data-toggle='tab', href='#nav-main', role='tab', aria-controls='nav-main', aria-selected='true') Overview
+                  a#nav-novel-tab.nav-item.nav-link(data-toggle='tab', href='#nav-novel', role='tab', aria-controls='nav-novel', aria-selected='false') Novel
+                  a#nav-follower-tab.nav-item.nav-link(data-toggle='tab', href='#nav-follower', role='tab', aria-controls='nav-follower', aria-selected='false') Follower
+                  a#nav-following-tab.nav-item.nav-link(data-toggle='tab', href='#nav-following', role='tab', aria-controls='nav-following', aria-selected='false') Following
+            br
+            #nav-tabContent.tab-content
+              #nav-main.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-main-tab')
+                .row
+                  .col-sm-6
+                    .card.card-novel
+                      .card-body.card-user-profile
+                        .row
+                          .col-sm-4.text-center
+                            img.profile-img.rounded-circle(src="img/profile.jpg", alt="")
+                          .col-sm-8
+                            h5.card-title
+                              a(href='#', title='James', data-toggle='popover', data-placement='top', data-trigger='hover', data-content='sadfsadf') James
+                            p.card-text 24 Novel, 18K Follower
+                            a.btn.btn-primary.float-right.btn-follow(href='#') Follow
+                  .col-sm-6
+                    .card.card-novel
+                      .card-body.card-user-profile
+                        .row
+                          .col-sm-4.text-center
+                            img.profile-img.rounded-circle(src="img/profile.jpg", alt="")
+                          .col-sm-8
+                            h5.card-title
+                              a(href='#', title='James', data-toggle='popover', data-placement='top', data-trigger='hover', data-content='sadfsadf') James
+                            p.card-text 24 Novel, 18K Follower
+                            a.btn.btn-primary.float-right.btn-follow(href='#') Follow
+                  .col-sm-6
+                    .card.card-novel
+                      .card-body.card-user-profile
+                        .row
+                          .col-sm-4.text-center
+                            img.profile-img.rounded-circle(src="img/profile.jpg", alt="")
+                          .col-sm-8
+                            h5.card-title
+                              a(href='#', title='James', data-toggle='popover', data-placement='top', data-trigger='hover', data-content='sadfsadf') James
+                            p.card-text 24 Novel, 18K Follower
+                            a.btn.btn-primary.float-right.btn-unfollow(href='#') UnFollow
+                  .col-sm-6
+                    .card.card-novel
+                      .card-body.card-user-profile
+                        .row
+                          .col-sm-4.text-center
+                            img.profile-img.rounded-circle(src="img/profile.jpg", alt="")
+                          .col-sm-8
+                            h5.card-title
+                              a(href='#', title='James', data-toggle='popover', data-placement='top', data-trigger='hover', data-content='sadfsadf') James
+                            p.card-text 24 Novel, 18K Follower
+                            a.btn.btn-primary.float-right.btn-follow(href='#') Follow
+              #nav-novel.tab-pane.fade(role='tabpanel', aria-labelledby='nav-novel-tab') ddd
+              #nav-follower.tab-pane.fade(role='tabpanel', aria-labelledby='nav-follower-tab') aa
+              #nav-following.tab-pane.fade(role='tabpanel', aria-labelledby='nav-following-tab') xcczxcxzxc
 
 block _js
+  script.
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+    });

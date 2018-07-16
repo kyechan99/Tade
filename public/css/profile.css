@@ -10,20 +10,22 @@ html {
         padding-top : 0;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .card.card-shadow {
         box-shadow: 0 0 15px 1px gray;
     }
-    #profile .profile-card {
+    #profile-left .profile-card {
         box-shadow: 0 0 15px 1px gray;
     }
 } 
 
 @media(max-width:992px){
-    #profile{
+    #profile-left{
         padding:0;
     }
 }
  
-#profile .profile-card {
+#profile-left .profile-card {
     padding-top:2.5rem;
     padding-bottom:2.5rem;
     margin-left: -2rem;
@@ -33,28 +35,58 @@ html {
     text-align: center;
 }
 
-#profile .profile-img {
+#profile-left .profile-img {
   object-fit: cover;
   width:150px;
   height:150px;
   box-shadow: 0px 0px 10px rgba(0,0,0,1);
 }
 
-#profile a {
+#profile-left a {
     padding: 10px 24px 10px 24px;
     border-radius:50px;
 }
 
-#profile a.btn {
+.btn-follow {
     border: 0;
     background: linear-gradient(141deg, #1dc5ba 0%, #1fc8db 51%, #4ebfe9 75%);
 }
 
-#profile .info-card {
+.btn-unfollow {
+    border: 0;
+    background: linear-gradient(141deg, #ec5541 0%, #cf796e 51%, #e9604e 75%);
+}
+
+#profile-left .info-card {
     padding-top:2rem;
     padding-bottom:1rem;
 }
 
-#profile .info-card h4 p {
+#profile-left .info-card h4 p {
+    margin-bottom: 0;
+}
+
+#profile-left .info-card p {
+    font-size:14px;
+}
+#profile-right .card.card-novel {
+    margin-bottom : 15px;
+}
+
+#profile-right .profile-img {
+    object-fit: cover;
+    margin: 0 auto;
+    position: flex;
+    width: 4rem;
+	height: 4rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+#profile-right .card-body.card-user-profile {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#profile-right .card-body.card-user-profile h5 {
     margin-bottom: 0;
 }
