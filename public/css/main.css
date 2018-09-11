@@ -8,6 +8,12 @@ html {
         padding-left: 6.5rem;
     }
 }
+@font-face { 
+    font-family: 'KimNamyun'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KimNamyun.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
 
 #recommend-novel img {    
   object-fit: cover;
@@ -17,17 +23,34 @@ html {
   filter: grayscale(10%);
 }
 
-#best-novel .card {
-  padding: 0px;
-}
 #best-novel img {
   object-fit: cover;
   width: 100%;
   height: 350px;
 }
 
+#best-novel.card .card,
+#rotation-card.card {
+    padding-right: 0px;
+    padding: 0px;
+}
+#rotation-card.card h4 {
+    /* display: */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'KimNamyun';
+    font-weight: 900;
+}
+
+
 i.fas {
     color: gray;
+}
+.con-fa {
+    margin-bottom:-10px; 
+    background:white; 
+    width:48px; 
 }
 
 @media (max-width: 992px) {
